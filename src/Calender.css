@@ -1,0 +1,71 @@
+/* Calendar container */
+.calendar-container {
+  width: 300px; /* Set a fixed width or adjust as needed */
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Calendar header */
+.calendar-header {
+  background-color: #0074d9; /* Header background color */
+  color: #fff; /* Header text color */
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+
+/* Calendar navigation buttons */
+.react-calendar__navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.react-calendar__navigation__prev-button,
+.react-calendar__navigation__next-button {
+  background-color: #0074d9; /* Navigation button background color */
+  color: #fff; /* Navigation button text color */
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Calendar weekday labels */
+.react-calendar__month-view__weekdays {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f0f0f0; /* Weekday labels background color */
+  padding: 5px 0;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  font-weight: bold;
+}
+
+/* Calendar day cells */
+.react-calendar__tile {
+  width: 40px; /* Adjust cell width */
+  height: 40px; /* Adjust cell height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.react-calendar__tile--active {
+  background-color: #0074d9; /* Active day cell background color */
+  color: #fff; /* Active day cell text color */
+}
+
+/* Custom styles for present and absent days */
+.present {
+  background-color: #28a745; /* Green for present */
+  color: #fff;
+}
+
+.absent {
+  background-color: #dc3545; /* Red for absent */
+  color: #fff;
+}
